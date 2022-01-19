@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-Italic-VariableFont_wght.ttf")
+      format("truetype"),
+    url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-VariableFont_wght.ttf")
+      format("truetype");
+}
+.search {
+  display: flex;
+}
+#btn_search {
+  font-family: Raleway;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #0065fc;
+  color: white;
+  border: 1px solid #0065fc;
+  border-radius: 0px 8px 8px 0px;
+  padding: 8px 4px 8px 4px;
+}
+#search_input {
+  height: 20px;
+  text-decoration: none;
+}

@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-Italic-VariableFont_wght.ttf")
+      format("truetype"),
+    url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-VariableFont_wght.ttf")
+      format("truetype");
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+ul a {
+  border-top: 2px solid transparent;
+  padding: 25px 30px 1px 22px;
+  font-size: 14px;
+}
+ul a:hover {
+  color: #0065fc;
+  border-color: #0065fc;
+}
+/*media queries for phone*/
+@media screen and (max-width: 768px) {
+  /*change hover on nav*/
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  ul a {
+    border-top: none;
+    border-bottom: 3px solid #f2f2f2;
+    padding-bottom: 8px;
+  }
+
+  #logo {
+    text-align: center;
+  }
+}
