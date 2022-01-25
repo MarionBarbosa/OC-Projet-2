@@ -1,0 +1,85 @@
+.article-hebergements-populaires {
+  display: flex;
+  justify-content: space-between;
+  height: 45%;
+  box-sizing: border-box;
+}
+.hebergements {
+  flex: 2 0 60%;
+  height: 100%;
+}
+.card-hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 80%;
+}
+.style-card {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 15px #d6d4d4;
+  overflow: hidden;
+}
+
+.card-hebergements .style-card {
+  width: 30%;
+  height: 26%;
+}
+.image-hebergements {
+  height: 120%;
+  width: 120%;
+  object-fit: cover;
+}
+
+.populaires {
+  flex: 1 0 30%;
+  height: auto;
+}
+.card-populaires {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  height: 13%;
+  margin-bottom: 25px;
+  margin-left: 35px;
+}
+
+.image-populaires {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  flex: 1 0 35%;
+}
+.texte-populaires {
+  flex: 2 0 65%;
+}
+.hebergements,
+.populaires {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+}
+
+.afficher-plus {
+  font-family: "Raleway-bold";
+}
+
+.titre-populaires {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.titre-populaires i {
+  font-size: 20px;
+}
+.star-rating {
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+  font-size: 11px;
+
+  color: #0065fc;
+}
+.empty-star {
+  color: #d6d4d4;
+}

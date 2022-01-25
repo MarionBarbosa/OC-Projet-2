@@ -1,0 +1,25 @@
+/*card styled in article-hebergements.css*/
+#activites .style-card {
+  border: none;
+  flex: 1 0 24%;
+}
+#activites img {
+  object-fit: contain;
+}
+.flex-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+#activites + .flex-card {
+  flex-direction: row;
+}
+#activites {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.flex-card .double {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
