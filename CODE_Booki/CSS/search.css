@@ -1,7 +1,12 @@
-h1 + p {
-  font-size: 14px;
+h1 {
+  margin-bottom: 5px;
 }
-
+.btn_search.icon_search {
+  display: none;
+}
+.icon-hidden {
+  visibility: hidden;
+}
 .search {
   display: flex;
 }
@@ -13,7 +18,7 @@ h1 + p {
   padding: 11px 16px 11px 16px;
 }
 
-#btn_search {
+.btn_search {
   font-family: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -30,4 +35,20 @@ h1 + p {
 }
 #search_input::placeholder {
   color: #969292;
+}
+
+/*media queries for phone*/
+@media screen and (max-width: 768px) {
+  .fas.fa-search {
+    color: white;
+    background-color: #0065fc;
+  }
+  .btn_search {
+    display: none;
+  }
+  .btn_search.icon_search {
+    display: block;
+    border-radius: 11px;
+    padding: 12px 15px;
+  }
 }

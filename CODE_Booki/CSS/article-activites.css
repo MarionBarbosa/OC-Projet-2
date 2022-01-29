@@ -1,25 +1,34 @@
-/*card styled in article-hebergements.css*/
-#activites .style-card {
-  border: none;
-  flex: 1 0 24%;
-}
-#activites img {
-  object-fit: contain;
-}
-.flex-card {
-  display: flex;
-  justify-content: space-evenly;
-}
-#activites + .flex-card {
-  flex-direction: row;
-}
-#activites {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  width: 100%;
-}
-.flex-card .double {
+.article-activites {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  row-gap: 20px;
+}
+.activites-cards {
+  display: flex;
+  flex: 1 0 25%;
+  column-gap: 50px;
+}
+.activites-cards .style-card {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+.container-image-activites {
+  height: 90%;
+}
+.image-activites {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+.titre-activites {
+  height: 15%;
+}
+.double-activites-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
 }

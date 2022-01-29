@@ -22,6 +22,7 @@ body {
   margin-left: 3%;
   margin-right: 3%;
 }
+
 p {
   font-size: 14px;
 }
@@ -43,8 +44,14 @@ a {
   text-decoration: none;
   color: black;
 }
+
 a:visited {
   color: black;
+}
+/*changing cursor for button and submit button in input*/
+button:hover,
+input[type="submit"] {
+  cursor: pointer;
 }
 
 /*Title sizing*/
