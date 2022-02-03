@@ -1,24 +1,54 @@
-@font-face {
-  font-family: "Raleway";
-  src: url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-Italic-VariableFont_wght.ttf")
-      format("truetype"),
-    url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-VariableFont_wght.ttf")
-      format("truetype");
+h1 {
+  margin-bottom: 5px;
+}
+.btn_search.icon_search {
+  display: none;
+}
+.icon-hidden {
+  visibility: hidden;
 }
 .search {
   display: flex;
 }
-#btn_search {
-  font-family: Raleway;
-  font-size: 11px;
+.locatorPin {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 11px 0px 0px 11px;
+  padding: 11px 16px 11px 16px;
+}
+
+.btn_search {
+  font-family: inherit;
+  font-size: 14px;
   font-weight: bold;
   background-color: #0065fc;
   color: white;
-  border: 1px solid #0065fc;
-  border-radius: 0px 8px 8px 0px;
-  padding: 8px 4px 8px 4px;
+  border: none;
+  border-radius: 0px 11px 11px 0px;
+  padding: 12px 20px 12px 20px;
 }
 #search_input {
-  height: 20px;
-  text-decoration: none;
+  border: 1px solid #f2f2f2;
+  padding: 10px 30px 10px 7px;
+  outline: none;
+}
+#search_input::placeholder {
+  color: #969292;
+}
+
+/*media queries for phone*/
+@media screen and (max-width: 768px) {
+  .fas.fa-search {
+    color: white;
+    background-color: #0065fc;
+  }
+  .btn_search {
+    display: none;
+  }
+  .btn_search.icon_search {
+    display: block;
+    border-radius: 11px;
+    padding: 12px 15px;
+  }
 }

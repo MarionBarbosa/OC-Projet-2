@@ -1,17 +1,67 @@
 @font-face {
   font-family: "Raleway";
-  src: url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-Italic-VariableFont_wght.ttf")
-      format("truetype"),
-    url("C:\Users\david\Documents\Webdev-Marion\Openclassrooms\P2_Lelaumier_Marion\CSS\Raleway-VariableFont_wght.ttf")
-      format("truetype");
+  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("Raleway-VariableFont_wght.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 body {
-  font-family: Raleway, Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
 }
+/*definition des dimensions de la page*/
 #bloc_page {
-  width: 992px;
+  max-width: 1284px;
   margin: auto;
+  border: 5px solid green;
 }
+.margin-page {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+p {
+  font-size: 13px;
+}
+
+/*Liens hypertexte*/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+/*changing cursor for button and submit button in input*/
+button:hover,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+/*Title sizing*/
+h1,
+h2 {
+  font-size: 20px;
+}
+h3,
+li {
+  font-size: 14px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Raleway-Bold";
+}
+h4 {
+  font-size: 13px;
+  font-weight: normal;
+}
+
 /*media queries for tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
   #bloc_page {
@@ -23,17 +73,4 @@ body {
   #bloc_page {
     width: auto;
   }
-}
-a {
-  text-decoration: none;
-  color: black;
-}
-a:visited {
-  color: black;
-}
-h1 {
-  font-size: 19px;
-}
-h2 {
-  font-size: 14px;
 }
